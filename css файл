@@ -1,0 +1,29 @@
+@keyframes propeller {
+    0% { transform: rotate(0deg); border-color: #FF0000; }
+    33% { transform: rotate(120deg); border-color: #00FF00; }
+    67% { transform: rotate(240deg); border-color: #0000FF; }
+    100% { transform: rotate(360deg); border-color: #FF0000; }
+}
+
+div.css-rotor {
+    position: absolute;
+    left: 100px;
+    top: 100px;
+    width: 100px;
+    height: 1px;
+    border: black 0px solid;
+    border-top-width: 5px;
+    animation: propeller 5s infinite linear;
+}
+
+div#js-rotor {
+    transition: all 0.1s;
+    position: absolute;
+    left: 100px;
+    top: 200px;
+    width: 100px;
+    height: 10px;
+    border: black 0px solid;
+    border-top-width: 5px;
+    
+}
